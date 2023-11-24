@@ -8,10 +8,14 @@
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts",
     "lint:fix": "eslint --fix",
     "format-code": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "list-prettier": "yarn lint:check && yarn format-code",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nurul islam",
   "license": "ISC",
+  "lint-staged": {
+    "src/**/*.ts": "yarn list-prettier"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -27,6 +31,7 @@
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
     "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "typescript": "^5.3.2"
   }
