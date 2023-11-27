@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\successes\\.fd4d63c8d22e35d077a1964fb567cedf2fc11a18-audit.json",
+    "files": [
+        {
+            "date": 1701075777854,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\successes\\bazarkoro-2023-27-11-15-success.log",
+            "hash": "46c1547d59ff96a1f9fe2e1fd4b8680e60bf1ec9222213ac242b549e25c64ba1"
+        }
+    ],
+    "hashType": "sha256"
+}

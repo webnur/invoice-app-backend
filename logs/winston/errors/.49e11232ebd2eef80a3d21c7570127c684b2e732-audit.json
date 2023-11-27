@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\.49e11232ebd2eef80a3d21c7570127c684b2e732-audit.json",
+    "files": [
+        {
+            "date": 1701075368736,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\phu-2023-27-11-14-error.log",
+            "hash": "8adf5ed91cf22c7ae1be84f1c40662b4f178c022e7f87ab334a1de66b4701d87"
+        },
+        {
+            "date": 1701075625261,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\phu-2023-27-11-15-error.log",
+            "hash": "80ddab36a9355e1eed579e3e808ff3d187d2dffa6c24e22ff0e6c3cee2c2a5bd"
+        }
+    ],
+    "hashType": "sha256"
+}

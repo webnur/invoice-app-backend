@@ -1,13 +1,14 @@
 import mongoose from 'mongoose'
 import app from './app'
 import config from './config/index'
+import { logger, errorlogger } from './shared/logger/logger'
 
 async function main() {
   try {
     await mongoose.connect(config.database_url as string)
-    console.log('database connect successfully')
+    logger.info('database connect successfully')
     const server = app.listen(config.port, () => {
-      console.log(`Example app listening on port ${config.port}`)
+      logger.info(`Example app listening on port ${config.port}`)
     })
 
     // Handle server close event to gracefully shut down the application
@@ -19,7 +20,7 @@ async function main() {
       })
     })
   } catch (error) {
-    console.log('failed to connect database', error)
+    errorlogger.error('failed to connect database', error)
   }
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
