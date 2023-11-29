@@ -1,10 +1,12 @@
-// 1. Create an interface representing a document in MongoDB.
-type IUser = {
-  id: string
-  name: string
-  email: string
-  password: string
-  avatar?: string
-}
+import { Model } from 'mongoose';
 
-export default IUser
+// 1. Create an interface representing a document in MongoDB.
+export type IUser = {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  avatar?: string;
+};
+
+export type UserModel = Model<IUser, Record<string, unknown>>;

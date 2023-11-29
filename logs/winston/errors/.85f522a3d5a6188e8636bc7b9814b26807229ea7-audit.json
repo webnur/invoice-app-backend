@@ -9,6 +9,61 @@
             "date": 1701075777866,
             "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-27-11-15-error.log",
             "hash": "1c94dbed566745d8df9ccead57e26a268bbf58afa9d5af519f871d35ba6d5701"
+        },
+        {
+            "date": 1701088705888,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-27-11-18-error.log",
+            "hash": "4edbf230b59b1c83e4a23fae4de0b57a43c7b38132c6f624b0907fc564de80a4"
+        },
+        {
+            "date": 1701100106706,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-27-11-21-error.log",
+            "hash": "34bcb69b430a466964b3d9edd967371b9c7543c2d29bb2c5b374a1760787952d"
+        },
+        {
+            "date": 1701126728005,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-05-error.log",
+            "hash": "bbfad2815b222761cafa2190259708e0c68d7cc8c5d545460a2fd4157fc7233c"
+        },
+        {
+            "date": 1701142267548,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-09-error.log",
+            "hash": "af0b49ac16cbf412fb9bf0b2cf36e261ac0445f249a4c9b08ffae81e94d5bde5"
+        },
+        {
+            "date": 1701145621894,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-10-error.log",
+            "hash": "b9eb43f23d917fb7ef3fcbe015bd47ac3f809eee048c56bbd5ee7ccf6c38bbb9"
+        },
+        {
+            "date": 1701147851556,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-11-error.log",
+            "hash": "813d67c4d4ae43e1f6c392b58f9cafd023545b04d1b3a14c9a3c300bf1d9ed1d"
+        },
+        {
+            "date": 1701161871118,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-14-error.log",
+            "hash": "a6ffe1bb759fa9bf075d384eb9026e0c138ec25fc3af74bb68b7a7604ccecaad"
+        },
+        {
+            "date": 1701162089772,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-15-error.log",
+            "hash": "97f29231b670e4a30b4b9d37d1b98de0630f92e1c73416201b3d7c808bd6f0d2"
+        },
+        {
+            "date": 1701172433276,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-17-error.log",
+            "hash": "75669193456b2ac0ccd0f7ccb94931e090687ab08246b7473e5adcfea455061b"
+        },
+        {
+            "date": 1701186647291,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-21-error.log",
+            "hash": "54fd02b4f95b0edcda0eb5afce5d12a5eff39ac71744261699d645f666abfaf7"
+        },
+        {
+            "date": 1701187816689,
+            "name": "C:\\projects\\ecommers\\ecommers-server\\logs\\winston\\errors\\bazarkoro-2023-28-11-22-error.log",
+            "hash": "1b95540cc563ad24906e5ec09d94ea72ab0ff34a5c4c26ead083f8add3945c04"
         }
     ],
     "hashType": "sha256"
