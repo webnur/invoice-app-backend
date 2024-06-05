@@ -1,43 +1,32 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
-import router from './app/routes';
-import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import httpStatus from 'http-status';
+import globalErrorHandler from './app/middlewares/globalErrorHandler';
+import modulesRoutes from './app/routes';
+
 const app: Application = express();
 
 app.use(cors());
+
 // parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// all routes of this application
-app.use('/api/v1', router);
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!');
-});
+//  modules routes here
+app.use('/api/v1', modulesRoutes);
 
-// app.get('/', (req: Request, res: Response) => {
-//   throw new ApiError(400, 'ore baba error')
-// })
-
-// const testId = async () => {
-//   const testId = await generateUserId()
-//   console.log(testId)
-// }
-// testId()
-
-// global error handler
+//global error handler
 app.use(globalErrorHandler);
 
-//handle not found Api
+// handle api not found
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(httpStatus.NOT_FOUND).json({
     success: false,
-    message: 'Not Found',
+    message: 'API not found',
     errorMessages: [
       {
         path: req.originalUrl,
-        message: 'API Not Found',
+        message: 'API not found',
       },
     ],
   });

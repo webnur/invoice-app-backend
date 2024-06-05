@@ -1,11 +1,15 @@
+/* eslint-disable no-console */
+import { Server } from 'http';
 import mongoose from 'mongoose';
 import app from './app';
-import config from './config/index';
-import { logger, errorlogger } from './shared/logger/logger';
-import { Server } from 'http';
+import config from './config';
+import { logger } from './shared/logger';
+// import config from './config/index';
+// import { errorlogger } from './shared/logger';
+// import { RedisClient } from './shared/redis';
 
 process.on('uncaughtException', error => {
-  errorlogger.error(error);
+  console.error(error);
   process.exit(1);
 });
 
@@ -14,40 +18,27 @@ let server: Server;
 async function main() {
   try {
     await mongoose.connect(config.database_url as string);
-    logger.info('database connect successfully');
-    server = app.listen(config.port, () => {
-      logger.info(`Example app listening on port ${config.port}`);
-    });
+    logger.info(`🛢   Database is connected successfully`);
+    // console.log(`🛢   Database is connected successfully`);
 
-    // Handle server close event to gracefully shut down the application
-    // process.on('SIGINT', () => {
-    //   console.log('Closing server...')
-    //   server.close(() => {
-    //     console.log('Server closed.')
-    //     process.exit(0)
-    //   })
-    // })
-  } catch (error) {
-    errorlogger.error('failed to connect database', error);
+    server = app.listen(config.port, () => {
+      logger.info(`Application  listening on port ${config.port}`);
+      // console.log(`Application  listening on port ${config.port}`);
+    });
+  } catch (err) {
+    console.error('Failed to connect database', err);
   }
 
   process.on('unhandledRejection', error => {
     if (server) {
       server.close(() => {
-        errorlogger.error(error);
+        console.error(error);
         process.exit(1);
       });
     } else {
       process.exit(1);
     }
   });
-  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
-main();
 
-// process.on('SIGTERM', () => {
-//   logger.info('SIGTERM is received');
-//   if (server) {
-//     server.close();
-//   }
-// });
+main();
